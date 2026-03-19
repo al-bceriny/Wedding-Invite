@@ -14,11 +14,13 @@ export default function WeddingInvitePortfolioPage() {
   const bride = "مها غزيل";
   const eventDate = "الأحد 03 / 05 / 2026";
   const eventTime = "يُحدد لاحقاً";
+
   const menVenue = {
     label: "موقع الرجال",
     text: "إدلب المدينة - صالة الرجال",
     mapUrl: "https://maps.app.goo.gl/PVsVDZeZ47BdLg4p8",
   };
+
   const womenVenue = {
     label: "موقع النساء",
     text: "سيتم تحديد موقع النساء لاحقاً",
@@ -64,92 +66,100 @@ export default function WeddingInvitePortfolioPage() {
   return (
     <div
       dir="rtl"
-      className="min-h-screen overflow-hidden bg-[linear-gradient(180deg,#f4ede3_0%,#f8f2ea_35%,#efe4d6_100%)] text-slate-800"
+      className="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,#fbf6ee_0%,#f2e6d7_36%,#ead8c1_100%)] text-slate-800"
       style={{ fontFamily: '"Noto Naskh Arabic", "Amiri", serif' }}
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
       `}</style>
 
-      <div className="pointer-events-none absolute inset-0 opacity-30 bg-[radial-gradient(rgba(177,143,87,0.18)_1px,transparent_1px)] bg-size-[18px_18px]" />
-      <div className="pointer-events-none absolute -top-16 right-0 h-[28rem] w-[28rem] rounded-full bg-amber-100/60 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-24 left-0 h-[26rem] w-[26rem] rounded-full bg-rose-100/60 blur-3xl" />
-      <div className="pointer-events-none absolute left-1/2 top-1/3 h-64 w-64 -translate-x-1/2 rounded-full bg-white/40 blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 opacity-25 bg-[radial-gradient(rgba(175,139,84,0.18)_1px,transparent_1px)] bg-size-[18px_18px]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-[linear-gradient(180deg,rgba(255,255,255,0.65)_0%,transparent_100%)]" />
+      <div className="pointer-events-none absolute -top-20 right-0 h-[30rem] w-[30rem] rounded-full bg-amber-100/70 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-20 left-0 h-[28rem] w-[28rem] rounded-full bg-rose-100/60 blur-3xl" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/30 blur-3xl" />
 
       <main className="relative z-10 flex min-h-screen items-center justify-center px-4 py-8 sm:px-6 lg:px-8 lg:py-14">
-        <section className="relative w-full max-w-4xl overflow-hidden rounded-[44px] border border-[#d9c19a] bg-[linear-gradient(180deg,rgba(255,252,247,0.96)_0%,rgba(255,248,239,0.99)_100%)] shadow-[0_35px_100px_rgba(96,67,34,0.18)]">
-          <div className="absolute inset-[14px] rounded-[34px] border border-[#ecd9bc]/90" />
-          <div className="absolute inset-0 rounded-[44px] bg-[linear-gradient(135deg,rgba(255,255,255,0.45),transparent_30%,transparent_70%,rgba(215,186,134,0.08))]" />
+        <section className="relative w-full max-w-5xl overflow-hidden rounded-[48px] border border-[#d8be94] bg-[linear-gradient(180deg,rgba(255,253,249,0.97)_0%,rgba(255,247,236,0.98)_100%)] shadow-[0_40px_110px_rgba(98,68,34,0.20)]">
+          <div className="absolute inset-[10px] rounded-[40px] border border-[#f2e2c4]/90" />
+          <div className="absolute inset-[22px] rounded-[32px] border border-[#ddc59d]/55" />
+          <div className="absolute inset-0 rounded-[48px] bg-[linear-gradient(135deg,rgba(255,255,255,0.42),transparent_28%,transparent_72%,rgba(210,173,109,0.10))]" />
 
-          <div className="pointer-events-none absolute right-0 top-0 translate-x-10 -translate-y-8 opacity-40">
-            <div className="relative h-80 w-80 text-[#97a8c8]">
-              <Flower2 className="absolute right-12 top-4 h-24 w-24" />
-              <Flower2 className="absolute right-0 top-24 h-28 w-28" />
-              <Flower2 className="absolute right-20 top-44 h-16 w-16" />
-              <div className="absolute right-[4.75rem] top-12 h-60 w-px bg-gradient-to-b from-[#97a8c8] to-transparent" />
+          <div className="pointer-events-none absolute right-0 top-0 translate-x-10 -translate-y-10 opacity-45">
+            <div className="relative h-96 w-96 text-[#96a8c8]">
+              <Flower2 className="absolute right-16 top-8 h-24 w-24" />
+              <Flower2 className="absolute right-1 top-28 h-32 w-32" />
+              <Flower2 className="absolute right-24 top-56 h-18 w-18" />
+              <Flower2 className="absolute right-10 top-72 h-14 w-14" />
+              <div className="absolute right-[5.5rem] top-10 h-72 w-px bg-gradient-to-b from-[#96a8c8] to-transparent" />
             </div>
           </div>
 
-          <div className="pointer-events-none absolute bottom-0 left-0 -translate-x-10 translate-y-10 opacity-40">
-            <div className="relative h-80 w-80 text-[#97a8c8]">
-              <Flower2 className="absolute bottom-28 left-1 h-28 w-28" />
-              <Flower2 className="absolute bottom-10 left-16 h-24 w-24" />
-              <Flower2 className="absolute bottom-0 left-32 h-16 w-16" />
-              <div className="absolute bottom-8 left-[5.25rem] h-60 w-px bg-gradient-to-t from-[#97a8c8] to-transparent" />
+          <div className="pointer-events-none absolute bottom-0 left-0 -translate-x-12 translate-y-12 opacity-45">
+            <div className="relative h-96 w-96 text-[#96a8c8]">
+              <Flower2 className="absolute bottom-32 left-2 h-32 w-32" />
+              <Flower2 className="absolute bottom-12 left-20 h-24 w-24" />
+              <Flower2 className="absolute bottom-2 left-40 h-16 w-16" />
+              <Flower2 className="absolute bottom-28 left-44 h-14 w-14" />
+              <div className="absolute bottom-10 left-[6rem] h-72 w-px bg-gradient-to-t from-[#96a8c8] to-transparent" />
             </div>
           </div>
 
-          <div className="relative px-6 py-12 text-center sm:px-10 sm:py-16 lg:px-20 lg:py-20">
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#e6d3b4] bg-white/80 shadow-[0_10px_25px_rgba(125,89,46,0.10)] backdrop-blur-sm">
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[linear-gradient(180deg,#f8f2e7_0%,#f0e2c9_100%)] text-[#b38a52] shadow-inner">
-                <Sparkles className="h-6 w-6" />
+          <div className="relative px-6 py-12 text-center sm:px-10 sm:py-16 lg:px-24 lg:py-24">
+            <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full border border-[#e9d5b3] bg-white/85 shadow-[0_14px_35px_rgba(130,94,46,0.12)] backdrop-blur-sm">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#f1dfc0] bg-[linear-gradient(180deg,#fbf6ec_0%,#efdfc0_100%)] text-[#b58b50] shadow-inner">
+                <Sparkles className="h-7 w-7" />
               </div>
             </div>
 
-            <div className="mt-6 space-y-3">
-              <p className="text-[11px] tracking-[0.45em] text-[#a5885c] uppercase sm:text-xs">
+            <div className="mt-7 space-y-3">
+              <p className="text-[11px] tracking-[0.5em] text-[#a68659] uppercase sm:text-xs">
                 wedding invitation
               </p>
-              <div className="mx-auto h-px w-28 bg-gradient-to-r from-transparent via-[#d4b88a] to-transparent" />
+              <div className="mx-auto flex items-center justify-center gap-4">
+                <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#d5b686]" />
+                <div className="h-2 w-2 rounded-full bg-[#ccab76]" />
+                <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#d5b686]" />
+              </div>
             </div>
 
-            <div className="mx-auto mt-8 max-w-3xl rounded-[28px] border border-[#ead8bc] bg-white/55 px-5 py-6 shadow-[0_12px_30px_rgba(90,62,27,0.05)] backdrop-blur-sm sm:px-8">
+            <div className="mx-auto mt-9 max-w-3xl rounded-[30px] border border-[#ead6b6] bg-white/60 px-5 py-6 shadow-[0_14px_34px_rgba(90,62,27,0.06)] backdrop-blur-sm sm:px-8 sm:py-7">
               <p className="text-base leading-10 text-[#756658] sm:text-lg lg:text-[1.2rem]">
                 وَمِنْ آيَاتِهِ الدالة على رحمته وعنايته بعباده وحكمته العظيمة وعلمه المحيط، أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا تناسبكم وتناسبونهن، وتشاكلكم وتشاكلونهن، لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً بما رتب على الزواج من الأسباب الجالبة للمودة والرحمة.
               </p>
             </div>
 
-            <p className="mx-auto mt-7 max-w-2xl text-lg leading-10 text-[#7d6b59] sm:text-xl lg:text-[1.28rem]">
+            <p className="mx-auto mt-8 max-w-3xl text-lg leading-10 text-[#7a6858] sm:text-xl lg:text-[1.46rem]">
               يُسعد السيد محمد علي بسيريني أن يدعوكم لحفل زفاف ولده على ابنة السيد عبد اللطيف غزيل
             </p>
 
-            <div className="mt-10 space-y-6">
-              <h1 className="text-5xl font-bold tracking-[0.08em] text-[#7d95b6] drop-shadow-[0_4px_12px_rgba(125,149,182,0.15)] sm:text-6xl lg:text-7xl">
+            <div className="mt-12 space-y-6">
+              <h1 className="text-5xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
                 {groom}
               </h1>
 
-              <div className="flex items-center justify-center gap-4 text-[#bd9a67]">
-                <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#d9c29c]" />
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#ead8bc] bg-white/85 shadow-sm">
+              <div className="flex items-center justify-center gap-4 text-[#c09b63]">
+                <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#dec7a0]" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#ead8bc] bg-white/90 shadow-[0_8px_18px_rgba(138,104,57,0.10)]">
                   <Heart className="h-5 w-5 fill-current" />
                 </div>
-                <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#d9c29c]" />
+                <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#dec7a0]" />
               </div>
 
-              <h2 className="text-5xl font-bold tracking-[0.08em] text-[#7d95b6] drop-shadow-[0_4px_12px_rgba(125,149,182,0.15)] sm:text-6xl lg:text-7xl">
+              <h2 className="text-5xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
                 {bride}
               </h2>
             </div>
 
-            <div className="mx-auto mt-12 max-w-3xl rounded-[30px] border border-[#ead7b6] bg-white/80 px-6 py-7 shadow-[0_18px_40px_rgba(88,60,29,0.08)] backdrop-blur-sm sm:px-8 sm:py-8">
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 sm:gap-3">
-                <div className="rounded-[22px] bg-[#fcf7ef] px-4 py-5 shadow-inner lg:col-span-2">
+            <div className="mx-auto mt-14 max-w-4xl rounded-[34px] border border-[#ead6b2] bg-white/82 px-6 py-7 shadow-[0_22px_48px_rgba(88,60,29,0.10)] backdrop-blur-sm sm:px-8 sm:py-8">
+              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+                <div className="rounded-[24px] bg-[linear-gradient(180deg,#fdf9f3_0%,#f7efe2_100%)] px-4 py-5 shadow-inner xl:col-span-2">
                   <CalendarDays className="mx-auto h-5 w-5 text-[#a98653]" />
                   <p className="mt-3 text-sm text-[#9c8566]">التاريخ</p>
                   <p className="mt-2 text-base font-semibold text-[#5d5145] sm:text-lg">{eventDate}</p>
                 </div>
 
-                <div className="rounded-[22px] bg-[#fcf7ef] px-4 py-5 shadow-inner lg:col-span-2">
+                <div className="rounded-[24px] bg-[linear-gradient(180deg,#fdf9f3_0%,#f7efe2_100%)] px-4 py-5 shadow-inner xl:col-span-2">
                   <Clock3 className="mx-auto h-5 w-5 text-[#a98653]" />
                   <p className="mt-3 text-sm text-[#9c8566]">الوقت</p>
                   <p className="mt-2 text-base font-semibold text-[#5d5145] sm:text-lg">{eventTime}</p>
@@ -161,29 +171,27 @@ export default function WeddingInvitePortfolioPage() {
                   href={menVenue.mapUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="group rounded-[24px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(88,60,29,0.08)]"
+                  className="group rounded-[26px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_35px_rgba(88,60,29,0.10)]"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm text-[#9c8566]">{menVenue.label}</p>
                       <p className="mt-2 text-base font-semibold leading-8 text-[#5d5145]">{menVenue.text}</p>
                     </div>
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#e5d0ac] bg-white text-[#a98653] shadow-sm transition group-hover:scale-105">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#e5d0ac] bg-white text-[#a98653] shadow-sm transition group-hover:scale-105 group-hover:border-[#d8b27a]">
                       <MapPin className="h-5 w-5" />
                     </div>
                   </div>
                   <p className="mt-3 text-sm text-[#8b755b]">اضغط لفتح العنوان على خرائط Google</p>
                 </a>
 
-                <div
-                  className="rounded-[24px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right"
-                >
+                <div className="rounded-[26px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm text-[#9c8566]">{womenVenue.label}</p>
                       <p className="mt-2 text-base font-semibold leading-8 text-[#5d5145]">{womenVenue.text}</p>
                     </div>
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#ead7b6] bg-[#f8f1e7] text-[#b39a76] shadow-sm">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#ead7b6] bg-[#f8f1e7] text-[#b39a76] shadow-sm">
                       <MapPin className="h-5 w-5" />
                     </div>
                   </div>
@@ -192,15 +200,15 @@ export default function WeddingInvitePortfolioPage() {
               </div>
             </div>
 
-            <p className="mx-auto mt-9 max-w-2xl text-base leading-9 text-[#7e6f60] sm:text-lg lg:text-[1.1rem]">
+            <p className="mx-auto mt-10 max-w-2xl text-base leading-9 text-[#7e6f60] sm:text-lg lg:text-[1.12rem]">
               حضوركم يسعدنا ويزيد هذه المناسبة جمالاً، ونأمل أن تشاركونا فرحتنا ودعواتكم الطيبة.
             </p>
 
-            <div className="mt-11">
+            <div className="mt-12">
               <button
                 type="button"
                 onClick={() => setIsOpen(true)}
-                className="group rounded-full border border-[#a77f46] bg-[linear-gradient(180deg,#a9834c_0%,#8d6733_100%)] px-10 py-4 text-base font-semibold text-white shadow-[0_18px_35px_rgba(137,103,51,0.28)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_45px_rgba(137,103,51,0.34)]"
+                className="group rounded-full border border-[#a77f46] bg-[linear-gradient(180deg,#b18a51_0%,#8c6733_100%)] px-12 py-4 text-base font-semibold text-white shadow-[0_20px_40px_rgba(137,103,51,0.28)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_50px_rgba(137,103,51,0.35)]"
               >
                 <span className="flex items-center justify-center gap-2">
                   <Heart className="h-4 w-4 transition group-hover:scale-110" />
@@ -252,7 +260,7 @@ export default function WeddingInvitePortfolioPage() {
                       onClick={() => setAttendance("yes")}
                       className={`rounded-[22px] px-4 py-3 text-sm font-semibold transition ${
                         attendance === "yes"
-                          ? "bg-[linear-gradient(180deg,#a9834c_0%,#8d6733_100%)] text-white shadow-md"
+                          ? "bg-[linear-gradient(180deg,#b18a51_0%,#8c6733_100%)] text-white shadow-md"
                           : "bg-[#f6efe5] text-[#6d5b47] hover:bg-[#efe4d4]"
                       }`}
                     >
@@ -263,7 +271,7 @@ export default function WeddingInvitePortfolioPage() {
                       onClick={() => setAttendance("no")}
                       className={`rounded-[22px] px-4 py-3 text-sm font-semibold transition ${
                         attendance === "no"
-                          ? "bg-[linear-gradient(180deg,#a9834c_0%,#8d6733_100%)] text-white shadow-md"
+                          ? "bg-[linear-gradient(180deg,#b18a51_0%,#8c6733_100%)] text-white shadow-md"
                           : "bg-[#f6efe5] text-[#6d5b47] hover:bg-[#efe4d4]"
                       }`}
                     >
@@ -288,7 +296,7 @@ export default function WeddingInvitePortfolioPage() {
 
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-[22px] bg-[linear-gradient(180deg,#a9834c_0%,#8d6733_100%)] px-4 py-3.5 text-sm font-bold text-white shadow-[0_14px_30px_rgba(137,103,51,0.25)] transition hover:brightness-105"
+                  className="flex w-full items-center justify-center gap-2 rounded-[22px] bg-[linear-gradient(180deg,#b18a51_0%,#8c6733_100%)] px-4 py-3.5 text-sm font-bold text-white shadow-[0_14px_30px_rgba(137,103,51,0.25)] transition hover:brightness-105"
                 >
                   <Users className="h-4 w-4" />
                   إرسال التأكيد
