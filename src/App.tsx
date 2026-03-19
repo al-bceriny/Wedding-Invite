@@ -82,7 +82,7 @@ export default function WeddingInvitePortfolioPage() {
 
           <div className="relative px-6 py-12 text-center sm:px-10 sm:py-16 lg:px-16 lg:py-20">
             <p className="text-xs tracking-[0.35em] text-[#a1845d] uppercase sm:text-sm">
-              دعوة زفاف
+              wedding invitation
             </p>
 
             <p className="mt-7 text-lg leading-9 text-[#7f6f60] sm:text-xl">
@@ -90,7 +90,7 @@ export default function WeddingInvitePortfolioPage() {
             </p>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-10 text-[#7f6f60] sm:text-xl">
-              يُسعد ويُشرّف السيد محمد علي بسيريني أن يدعوكم لحفل زفاف ولده على ابنة السيد عبد اللطيف غزيل
+              يُسعد السيد محمد علي بسيريني أن يدعوكم لحفل زفاف ولده على ابنة السيد عبد اللطيف غزيل
             </p>
 
             <div className="mt-8 space-y-5">
