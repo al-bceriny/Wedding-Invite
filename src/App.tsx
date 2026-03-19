@@ -90,7 +90,13 @@ export default function WeddingInvitePortfolioPage() {
             </p>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-10 text-[#7f6f60] sm:text-xl">
-              يُسعد السيد محمد علي بسيريني أن يدعوكم لحفل زفاف ولده على ابنة السيد عبد اللطيف غزيل
+              يُسعد السيد محمد علي بسيريني
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-10 text-[#7f6f60] sm:text-xl">
+              أن يدعوكم لحفل زفاف ولده على ابنة 
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-10 text-[#7f6f60] sm:text-xl">
+              السيد عبد اللطيف غزيل
             </p>
 
             <div className="mt-8 space-y-5">
