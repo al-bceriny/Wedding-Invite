@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { CalendarDays, Clock3, Heart, MapPin, Users, Flower2 } from "lucide-react";
 
 export default function WeddingInvitePortfolioPage() {
@@ -14,18 +14,34 @@ export default function WeddingInvitePortfolioPage() {
   const [companions, setCompanions] = useState("1");
   const [submitted, setSubmitted] = useState(false);
 
-  const summary = useMemo(() => {
-    return {
-      guestName: guestName.trim() || "ضيف كريم",
-      attendance,
-      companions,
-    };
-  }, [attendance, companions, guestName]);
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("RSVP payload:", summary);
-    setSubmitted(true);
+
+    try {
+      const response = await fetch("/api/rsvp", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          guest_name: guestName.trim() || "ضيف كريم",
+          attendance,
+          companions: Number(companions),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        alert(data.error || "حدث خطأ أثناء إرسال التأكيد");
+        return;
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      console.error(error);
+      alert("تعذر الاتصال بالخادم");
+    }
   };
 
   return (
@@ -218,7 +234,7 @@ export default function WeddingInvitePortfolioPage() {
                 </div>
                 <h4 className="mt-4 text-xl font-bold text-[#55483d]">شكراً لك</h4>
                 <p className="mt-2 text-sm leading-7 text-[#76685a]">
-                  تم تسجيل الرد داخل الواجهة حالياً، والخطوة التالية هي ربطه فعلياً مع Vercel لتصلك التأكيدات مباشرة.
+                  تم إرسال تأكيد الحضور بنجاح، نشكركم على الرد ونتطلع لمشاركتكم فرحتنا.
                 </p>
               </div>
             )}
