@@ -17,12 +17,12 @@ export default function WeddingInvitePortfolioPage() {
   const menVenue = {
     label: "موقع الرجال",
     text: "إدلب المدينة - صالة الرجال",
-    mapUrl: "https://maps.google.com/?q=Idlib+Men+Hall",
+    mapUrl: "https://maps.app.goo.gl/PVsVDZeZ47BdLg4p8",
   };
   const womenVenue = {
     label: "موقع النساء",
-    text: "إدلب المدينة - صالة النساء",
-    mapUrl: "https://maps.google.com/?q=Idlib+Women+Hall",
+    text: "سيتم تحديد موقع النساء لاحقاً",
+    mapUrl: "",
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -175,23 +175,20 @@ export default function WeddingInvitePortfolioPage() {
                   <p className="mt-3 text-sm text-[#8b755b]">اضغط لفتح العنوان على خرائط Google</p>
                 </a>
 
-                <a
-                  href={womenVenue.mapUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group rounded-[24px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right transition hover:-translate-y-0.5 hover:shadow-[0_14px_28px_rgba(88,60,29,0.08)]"
+                <div
+                  className="rounded-[24px] border border-[#ead7b6] bg-[linear-gradient(180deg,#fffdfa_0%,#fcf7ef_100%)] px-5 py-5 text-right"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <p className="text-sm text-[#9c8566]">{womenVenue.label}</p>
                       <p className="mt-2 text-base font-semibold leading-8 text-[#5d5145]">{womenVenue.text}</p>
                     </div>
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#e5d0ac] bg-white text-[#a98653] shadow-sm transition group-hover:scale-105">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#ead7b6] bg-[#f8f1e7] text-[#b39a76] shadow-sm">
                       <MapPin className="h-5 w-5" />
                     </div>
                   </div>
-                  <p className="mt-3 text-sm text-[#8b755b]">اضغط لفتح العنوان على خرائط Google</p>
-                </a>
+                  <p className="mt-3 text-sm text-[#8b755b]">سيتم إضافة رابط الخرائط فور تحديد الموقع</p>
+                </div>
               </div>
             </div>
 
