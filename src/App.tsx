@@ -82,7 +82,7 @@ export default function WeddingInvitePortfolioPage() {
 
           <div className="relative px-6 py-12 text-center sm:px-10 sm:py-16 lg:px-16 lg:py-20">
             <p className="text-xs tracking-[0.35em] text-[#a1845d] uppercase sm:text-sm">
-              wedding invitation
+              دعوة زفاف
             </p>
 
             <p className="mt-7 text-lg leading-9 text-[#7f6f60] sm:text-xl">
