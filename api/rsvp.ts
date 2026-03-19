@@ -58,6 +58,48 @@ export async function POST(req: Request): Promise<Response> {
       });
     }
 
+    const statusLabel = attendance === "yes" ? "✅ سيحضر" : "❌ اعتذار";
+    const now = new Date().toLocaleString("ar-SY", {
+      dateStyle: "medium",
+      timeStyle: "short",
+    });
+
+    const telegramMessage = [
+      "💍 *رد جديد على دعوة الزفاف*",
+      "",
+      `👤 *الاسم:* ${guest_name}`,
+      `📌 *الحالة:* ${statusLabel}`,
+      `👥 *عدد الأشخاص:* ${companions}`,
+      `🕒 *الوقت:* ${now}`,
+    ].join("\n");
+
+    const botToken = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+
+    if (botToken && chatId) {
+      const telegramResponse = await fetch(
+        `https://api.telegram.org/bot${botToken}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: telegramMessage,
+            parse_mode: "Markdown",
+          }),
+        }
+      );
+
+      if (!telegramResponse.ok) {
+        const telegramError = await telegramResponse.text();
+        console.error("Telegram sendMessage failed:", telegramError);
+      }
+    } else {
+      console.warn("Telegram env vars are missing.");
+    }
+
     return new Response(JSON.stringify({ success: true }), {
       status: 200,
       headers: { "Content-Type": "application/json" },
