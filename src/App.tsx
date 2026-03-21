@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export default function WeddingInvitePortfolioPage() {
-  const groom = "عدنان";
-  const bride = "مها";
+  const groom = "الشاب عدنان";
+  const bride = "الآنسة مها";
   const eventDate = "الأحد 03 / 05 / 2026";
   const eventTime = "يُحدد لاحقاً";
 
@@ -130,7 +130,7 @@ export default function WeddingInvitePortfolioPage() {
             </div>
 
             <p className="mx-auto mt-8 max-w-3xl text-lg leading-10 text-[#7a6858] sm:text-xl lg:text-[1.46rem]">
-              يُسعد السيد محمد علي بسيريني أن يدعوكم لحفل زفاف ولده على ابنة السيد عبد اللطيف غزيل
+              يسرّ السيد محمد علي بسيريني والسيد عبد اللطيف غزيل أن يدعوَاكُم لحفل زفاف ولديهما
             </p>
 
             <div className="mt-12 space-y-6">
@@ -141,7 +141,7 @@ export default function WeddingInvitePortfolioPage() {
               <div className="flex items-center justify-center gap-4 text-[#c09b63]">
                 <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#dec7a0]" />
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#ead8bc] bg-white/90 shadow-[0_8px_18px_rgba(138,104,57,0.10)]">
-                  <Heart className="h-5 w-5 fill-current" />
+                  <Sparkles className="h-5 w-5 fill-current" />
                 </div>
                 <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#dec7a0]" />
               </div>
