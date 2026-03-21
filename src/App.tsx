@@ -10,8 +10,8 @@ import {
 } from "lucide-react";
 
 export default function WeddingInvitePortfolioPage() {
-  const groom = "عدنان بسيريني";
-  const bride = "مها غزيل";
+  const groom = "عدنان";
+  const bride = "مها";
   const eventDate = "الأحد 03 / 05 / 2026";
   const eventTime = "يُحدد لاحقاً";
 
