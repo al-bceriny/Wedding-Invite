@@ -129,12 +129,12 @@ export default function WeddingInvitePortfolioPage() {
               </p>
             </div>
 
-            <p className="mx-auto mt-8 max-w-3xl text-lg leading-10 text-[#7a6858] sm:text-xl lg:text-[1.46rem]">
-              يسرّ السيد محمد علي بسيريني والسيد عبد اللطيف غزيل أن يدعوَاكُم لحفل زفاف ولديهما
+            <p className="mx-auto mt-8 max-w-3xl text-xl sm:text-xl lg:text-[1.46rem] leading-10 text-[#7a6858]">
+                يسرّ السيد محمد علي بسيريني والسيد عبد اللطيف غزيل أن يدعوَاكُم لحفل زفاف ولديهما
             </p>
 
             <div className="mt-12 space-y-6">
-              <h1 className="text-5xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
+              <h1 className="text-4xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
                 {groom}
               </h1>
 
@@ -146,7 +146,7 @@ export default function WeddingInvitePortfolioPage() {
                 <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#dec7a0]" />
               </div>
 
-              <h2 className="text-5xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
+              <h2 className="text-4xl font-bold tracking-[0.1em] text-[#7891b2] drop-shadow-[0_5px_15px_rgba(120,145,178,0.18)] sm:text-6xl lg:text-[5.2rem]">
                 {bride}
               </h2>
             </div>
